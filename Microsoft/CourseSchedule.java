@@ -12,44 +12,6 @@ Return true if you can finish all courses. Otherwise, return false.
 import java.util.*;
 
 class Solution{
-    // int total=0;
-    // List<List<Integer>> list;
-    // int[] nodes;
-    // final int visisted=1,notVisited=0,acyclic=2;
-    // public boolean canFinish(int numCourses, int[][] prerequisites) {
-    //     list=new ArrayList<>();
-    //     for(int i=0;i<prerequisites.length;i++){
-    //         list.add(new ArrayList<>());
-    //     }
-    //     init(numCourses,prerequisites);
-    //     nodes=new int[numCourses];
-    //     for(int i=0;i<numCourses;i++){
-    //         if(nodes[i]==notVisited){
-    //             dfs(i);
-    //         }
-    //     }
-    //     return total==numCourses;
-    // }
-    // private void dfs(int node){
-    //     nodes[node]=visisted;
-    //     List<Integer> path=list.get(node);
-    //     for(int i : path){
-    //         if(nodes[i]==notVisited){
-    //             dfs(i);
-    //         }else if(nodes[i]==visisted){
-    //             return;
-    //         }
-    //     }
-    //     total++;
-    //     nodes[node]=acyclic;
-    // }
-    // private void init(int num,int[][] prerequisites){
-    //     for(int[] pair : prerequisites){
-    //         int from=pair[1];
-    //         int to=pair[0];
-    //         list.get(from).add(to);
-    //     }
-    // }
     int scheduledCourses;
     Set<Integer>[] adjacencyList;
     int[] nodeStatus;
